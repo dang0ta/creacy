@@ -1,1 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/dyiPpHu0)
+# Welcome!
+This is my project for the first milestone on RevoU Fullstack Engineering Bootcamp. There's nothing in here yet, so come back again sometime in the future 🍻
+
+## Idea
+The idea for this project is to make a company profile website, deploy it to Netlify, and use custom domain for it. I'm going to use [this design](https://dribbble.com/shots/23291447-Creacy-Photography-Agency-Landing-Page) by Rima Dwi Novika as reference.

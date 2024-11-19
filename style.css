@@ -58,6 +58,8 @@ body {
     transform: rotateX(180deg);
 }
 
+/* common styles */
+
 .cta button {
     font-weight: 600;
     background-color: rgba(255,255,255, .6);
@@ -75,6 +77,33 @@ body {
 
 .cta button:hover {
     background-color: rgba(255,255,255, 1);
+}
+
+section {
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+section .page-number {
+    grid-area: page-number;
+}
+
+section .page-number .section-number {
+    color: var(--text-secondary);
+}
+
+section .description {
+    
+    max-width: 50%;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.75rem;
+}
+
+section h2 {
+    grid-area: title;
+    font-size: 3rem;
 }
 
 /* hero section */
@@ -154,6 +183,8 @@ main section.hero {
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 0;
+    margin: 0;
 }
 
 main section.hero h1 {
@@ -268,24 +299,159 @@ section.about-us .page-number {
     grid-area: page-number;
 }
 
-section.about-us .page-number .section-number {
-    color: var(--text-secondary);
-}
-
 section.about-us .description {
     grid-area: description;
-    max-width: 50%;
-    font-size: 1rem;
-    color: var(--text-secondary);
-    line-height: 1.75rem;
 }
 
 section.about-us h2 {
     grid-area: title;
-    font-size: 3rem;
 }
 
 section.about-us .cta {
     grid-area: cta;
 }
 
+section.expertise {
+    background:var(--bg-1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem 1fr 570px 1fr;
+    grid-template-areas: "page-number links" "title links" "showcase showcase" "showcase-nav showcase-nav";
+    position: relative;
+    row-gap: 2rem;
+}
+
+section.expertise .page-number {
+    grid-area: page-number;
+}
+
+section.expertise h2 {
+    grid-area: title;
+}
+
+section.expertise .links {
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    margin: auto;
+    text-transform: capitalize;
+}
+
+section.expertise .links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+section.expertise .links a:hover {
+    color: var(--text-main);
+}
+
+section.expertise .showcase {
+    overflow-x: auto;
+}
+
+section.expertise .showcase input[type=radio] {
+    display: none;
+}
+
+section.expertise .showcase input[type=radio]:checked + label figure figcaption {
+    opacity: 1;
+}
+
+section.expertise .showcase label {
+    cursor: pointer;
+    opacity: .75;
+    transition: all 0.3s;
+}
+
+section.expertise .showcase label:hover {
+    opacity: 1;
+}
+
+section.expertise .showcase {
+    grid-area: showcase;
+    margin-left: 25rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    overflow-y: hidden;
+    height: 560px;
+}
+
+section.expertise .showcase img {
+    width: 800px;
+    height: 542px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+section.expertise figcaption {
+    position: absolute;
+    bottom: calc(25% + 2px);
+    left: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    width: 23rem;
+}
+
+section.expertise figcaption h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+section.expertise figcaption p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+section.expertise .showcase-nav {
+    grid-area: showcase-nav;
+    margin-left: 25rem;
+    display: grid;
+    grid-template-columns: 4rem 4rem;
+    grid-template-rows: 4rem 4rem;
+    grid-template-areas: "prev next" "all all";
+}
+
+section.expertise .showcase-nav button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity 0.3s;
+}
+
+section.expertise .showcase-nav button:hover {
+    opacity: 1;
+}
+
+section.expertise .showcase-nav button:nth-child(1) {
+    grid-area: prev;
+    border-color: rgba(255,255,255,0.2);
+}
+
+section.expertise .showcase-nav button:nth-child(2) {
+    grid-area: next;
+    background-color: rgba(255,255,255,0.2);
+}
+
+section.expertise .showcase-nav a {
+    grid-area: all;
+    text-decoration: none;
+}
+
+section.expertise .showcase-nav a:hover{
+    text-decoration: underline;
+}

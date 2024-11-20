@@ -79,22 +79,24 @@ body {
     background-color: rgba(255,255,255, 1);
 }
 
+footer,
 section {
     margin: 1.5rem;
     padding: 2rem;
     border-radius: 1rem;
 }
 
+footer .page-number,
 section .page-number {
     grid-area: page-number;
 }
 
+footer .page-number .section-number,
 section .page-number .section-number {
     color: var(--text-secondary);
 }
 
 section .description {
-    
     max-width: 50%;
     font-size: 1rem;
     color: var(--text-secondary);
@@ -133,6 +135,14 @@ section h2 {
     padding: 0.5rem 1rem;
     justify-content: center;
     align-items: center;
+}
+
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -180,13 +190,6 @@ main .carousel-viewport img {
     object-fit: cover;
     width: 100%;
     height: auto;
-}
-
-main header a h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 main header, main header nav ul {
@@ -819,4 +822,153 @@ section.award label p  {
 section.award label h3,
 section.award label p {
     color: var(--text-secondary);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+footer .footer-text h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    max-width: 48rem;
+}
+
+footer .footer-text .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: .5rem;
+    color: var(--text-secondary);
+}
+
+footer nav, footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+footer nav {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+footer nav a, footer nav p {
+    color: var(--text-secondary);
+}
+
+@media screen and (max-width: 768px) { 
+    main header nav {
+        display: none;
+    }
+
+    main .carousel-viewport img {
+        width: 100%;
+        height: 100%;
+        object-position: 20% center;
+    }
+
+    main section.hero .preview {
+        display: none;
+    }
+
+    section.about-us,
+    section.work,
+    section.expertise,
+    section.award,
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.expertise .links {
+        display: none;
+    }
+
+    section.expertise .showcase {
+        margin: 0;
+    }
+
+    section.expertise figcaption {
+        position: relative;
+        opacity: 1;
+        left: unset;
+        bottom: unset;
+    }
+
+    section.expertise .showcase {
+        height: auto;
+    }
+
+    section.expertise .showcase-nav {
+        margin:0;
+    }
+
+    section.award figure {
+        display: none;
+    }
+
+    footer .footer-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer .footer-text .address {
+        align-items: flex-start;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1366px){
+    main header nav {
+        display: none;
+    }
+
+    main .carousel-viewport img {
+        width: 100%;
+        height: 100%;
+        object-position: 20% center;
+    }
+
+    main section.hero .preview {
+        display: none;
+    }
+
+    section.award, section.work, footer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    section.award figure {
+        display: none;
+    }
+
+    footer .footer-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer .footer-text .address {
+        align-items: flex-start;
+    }
 }

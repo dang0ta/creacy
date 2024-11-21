@@ -963,8 +963,15 @@ footer nav a, footer nav p {
         gap: 2rem;
     }
 
+    section.award ul {
+        margin-top: 30rem;
+    }
+
     section.award figure {
-        display: none;
+        display: block;
+        top: 20rem;
+        left: 3rem;
+        right: unset;
     }
 
     footer .footer-text {

@@ -755,8 +755,13 @@ section.award figure {
 }
 
 section.award figure img {
-    border-radius: 1.2rem;
+    border-radius: 1.5rem;
+    max-width: 484px;
+    width: 100%;
+    height: auto;
 }
+
+
 
 section.award input[type=radio]:checked + figure {
     opacity: 1;

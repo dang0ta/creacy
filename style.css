@@ -1,7 +1,8 @@
 :root {
     --bg-0: #1c1a1f;
     --bg-1: #363733;
-    --text-main: rgba(255, 255, 255, 0.9);
+    --text-main: rgba(255, 255, 255, 0.8);
+    --text-bold: rgba(255, 255, 255, 1);
     --text-secondary: rgba(255,255,255, 0.6);
 }
 * {
@@ -18,8 +19,6 @@ html, body, h1, h2, h3, p, ul, ol, li, a, form, input, button, figure, figcaptio
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
     font-family: 'Inter', 'sans-serif';
     color: var(--text-main);
@@ -60,6 +59,7 @@ body {
 
 /* common styles */
 
+
 .cta button {
     font-weight: 600;
     background-color: rgba(255,255,255, .6);
@@ -98,7 +98,7 @@ section .page-number .section-number {
 
 section .description {
     max-width: 50%;
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
     line-height: 1.75rem;
 }
@@ -106,6 +106,13 @@ section .description {
 section h2 {
     grid-area: title;
     font-size: 3rem;
+    font-weight: 400;
+}
+
+
+strong {
+    font-weight: 600;
+    color: var(--text-bold)
 }
 
  .labels {
@@ -116,6 +123,7 @@ section h2 {
     align-content: flex-start;
     gap: .5rem;
     width: 24rem;
+    max-width: 100%;
 }
 
  .labels span {
@@ -226,6 +234,7 @@ main section.hero h1 {
     font-size: 4rem;
     align-content: center;
     text-transform: capitalize;
+    font-weight: 600;
 }
 
 main section.hero .extra {
@@ -517,7 +526,7 @@ section.work .menu-1 .description {
 
 section.work .menu-1 .description h3 {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     max-width: 100%;
     text-transform: uppercase;
 }
@@ -604,6 +613,12 @@ section.work .menu-2 {
 }
 
 
+section.work .menu-2 p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
 section.work .menu-2::after {
     position: absolute;
     content: "";
@@ -624,7 +639,7 @@ section.work .menu-2 button {
 
 section.work .menu-2 h3 {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     max-width: 100%;
     text-transform: uppercase;
 }
@@ -689,7 +704,7 @@ section.work .menu-3 button {
 
 section.work .menu-3 h3 {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     max-width: 100%;
     text-transform: uppercase;
 }
@@ -762,6 +777,12 @@ section.award figure img {
     height: auto;
 }
 
+section.award figure figcaption p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    line-height: 1.75rem;
+}
 
 
 section.award input[type=radio]:checked + figure {

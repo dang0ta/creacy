@@ -106,7 +106,6 @@ section .description {
 }
 
 section h2 {
-    grid-area: title;
     font-size: 3rem;
     font-weight: 400;
     color: var(--text-secondary);

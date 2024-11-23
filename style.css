@@ -109,11 +109,11 @@ section h2 {
     grid-area: title;
     font-size: 3rem;
     font-weight: 400;
+    color: var(--text-secondary);
 }
 
-
 strong {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-bold)
 }
 
@@ -237,7 +237,8 @@ main section.hero h1 {
     font-size: 4rem;
     align-content: center;
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--text-bold)
 }
 
 main section.hero .extra {

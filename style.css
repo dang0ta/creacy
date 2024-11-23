@@ -442,6 +442,7 @@ section.expertise figcaption {
 section.expertise figcaption h3 {
     font-size: 1.5rem;
     font-weight: 600;
+    margin-bottom:1rem;
 }
 
 section.expertise figcaption p {

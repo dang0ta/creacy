@@ -10,5 +10,8 @@ This website is live and deployed on Netlify, detail about how to do it on your 
 ## Live Website
 You can access the live version of this project [here](https://rkspx.blog).
 
+## External Dependencies
+There are no external dependencies, this project uses no JS, and all assets and images are hosted locally. Image assets are from Unsplash.
+
 ## Feedbacks
 Got any issue, feedbacks, or just want to say hi? feel free to send me an email at ikosiriki@gmail.com.

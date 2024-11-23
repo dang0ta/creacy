@@ -4,6 +4,8 @@
     --text-main: rgba(255, 255, 255, 0.75);
     --text-bold: rgba(255, 255, 255, 1);
     --text-secondary: rgba(255,255,255, 0.6);
+    --item-background:  rgba(184, 184, 184, 0.1);
+    --item-border: rgba(184, 184, 184, 0.5);
 }
 * {
     box-sizing: border-box;
@@ -136,8 +138,8 @@ strong {
     text-transform: capitalize;
 
     border-radius: 1.5rem;
-    border: 1px solid rgba(184, 184, 184, 0.5);
-    background: rgba(184, 184, 184, 0.1);
+    border: 1px solid var(--item-border);
+    background: var(--item-background);
 
     display: flex;
     padding: 0.5rem 1rem;
@@ -267,11 +269,23 @@ main section.hero .preview figure {
     justify-content: flex-start;
     min-width: 400px;
     gap: 1rem;
-    height: 100%;
-    padding: 1rem;
-    border: 1px solid #fff;
+    height: calc(100% - .25rem);
+    padding: .75rem;
+    border: 1px solid var(--item-border);
     border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--item-background);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    user-select: none;
+}
+
+main section.hero .preview figure:hover h2 {
+    /* text-decoration: underline; */
+    color: var(--text-main);
+}
+
+main section.hero .preview figure:hover img {
+    filter: grayscale(0%);
 }
 
 main section.hero .preview figcaption {
@@ -284,6 +298,8 @@ main section.hero .preview figcaption {
 main section.hero .preview figcaption h2 {
     font-size: 1.5rem;
     font-weight: 400;
+    color: var(--text-secondary);
+    transition: all 0.3s;
 }
 
 main section.hero .preview figcaption p {
@@ -296,6 +312,8 @@ main section.hero .preview img {
     width: 120px;
     height: 120px;
     border-radius: .5rem;
+    filter: grayscale(60%);
+    transition: filter 0.3s;
 }
 
 section.about-us {

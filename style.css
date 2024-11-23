@@ -196,8 +196,7 @@ main .carousel-viewport figure, main .carousel-viewport picture {
 
 main .carousel-viewport img {
     object-fit: cover;
-    width: 100%;
-    height: auto;
+    min-height: 100%;
 }
 
 main header, main header nav ul {

@@ -291,10 +291,6 @@ main section.hero .preview figure:hover h2 {
     color: var(--text-main);
 }
 
-main section.hero .preview figure:hover img {
-    filter: grayscale(0%);
-}
-
 main section.hero .preview figcaption {
     display: flex;
     flex-direction: column;
@@ -319,8 +315,6 @@ main section.hero .preview img {
     width: 120px;
     height: 120px;
     border-radius: .5rem;
-    filter: grayscale(60%);
-    transition: filter 0.3s;
 }
 
 section.about-us {

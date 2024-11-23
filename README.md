@@ -15,3 +15,6 @@ There are no external dependencies, this project uses no JS, and all assets and 
 
 ## Feedbacks
 Got any issue, feedbacks, or just want to say hi? feel free to send me an email at ikosiriki@gmail.com.
+
+## Lighthouse Score
+![Lighthouse Score Screenshot](docs/images/lighthouse.png)

@@ -214,14 +214,21 @@ main header {
 }
 
 main header nav {
-    background: rgba(255,255,255,0.2);
+    background: var(--item-background);
+    border: 1px solid var(--item-border);
+    backdrop-filter: blur(4px);
     padding: 1rem 2rem;
     border-radius: 1rem;
 }
 
 main header nav ul {
-    gap: 1rem;
+    gap: 4rem;
 }
+
+main header nav ul li:hover a {
+    text-decoration: underline;
+}
+
 
 main section.hero {
     display: flex;
